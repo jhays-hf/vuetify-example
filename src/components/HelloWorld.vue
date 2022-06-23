@@ -16,7 +16,7 @@
         </h1>
       </v-col>
       <v-col cols="6">
-        <v-card color="background-lighten-1">
+        <v-card class="fill-height" color="background-lighten-1">
           <v-card-title>Dropdowns</v-card-title>
           <v-card-text>
             <v-select :items="states" />
@@ -25,7 +25,7 @@
         </v-card>
       </v-col>
       <v-col cols="6">
-        <v-card color="background-lighten-1">
+        <v-card class="fill-height" color="background-lighten-1">
           <v-card-title>Link & Button</v-card-title>
           <v-card-text>
             <v-container>
