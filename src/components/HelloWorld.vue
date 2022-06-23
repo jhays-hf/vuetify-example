@@ -15,7 +15,7 @@
           Heartflow Material UI Components based on syle guidelines
         </h1>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" lg="6">
         <v-card class="fill-height" color="background-lighten-1">
           <v-card-title>Dropdowns</v-card-title>
           <v-card-text>
@@ -24,7 +24,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" lg="6">
         <v-card class="fill-height" color="background-lighten-1">
           <v-card-title>Link & Button</v-card-title>
           <v-card-text>
