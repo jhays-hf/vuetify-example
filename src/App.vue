@@ -13,3 +13,10 @@ import HelloWorld from './components/HelloWorld.vue'
 defineComponent({ HelloWorld })
 
 </script>
+
+<style>
+a {
+  color: var(--v-primary-base);
+  text-decoration: none;
+}
+</style>

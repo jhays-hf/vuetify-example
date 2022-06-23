@@ -20,7 +20,7 @@
           <v-card-title>Dropdowns</v-card-title>
           <v-card-text>
             <v-select :items="states" />
-            <v-select :items="states" :disabled="true" />
+            <v-select :items="states" :disabled="true" v-model="disabledStateValue" />
           </v-card-text>
         </v-card>
       </v-col>
@@ -29,9 +29,24 @@
           <v-card-title>Link & Button</v-card-title>
           <v-card-text>
             <v-container>
-              <v-row>
-                <v-col cols="12"><a class="app-link" href="#">link</a></v-col>
-
+              <v-row class="text-left">
+                <v-col cols="12"><a class="primary--text" href="#">link</a></v-col>
+                <v-col cols="12">
+                  <v-btn variant="text">Text Button</v-btn>
+                  <v-btn variant="text" :disabled="true">Disabled Text Button</v-btn>
+                </v-col>
+                <v-col cols="12">
+                  <v-btn class="mr-2">Button</v-btn>
+                  <v-btn :disabled="true">Disabled Button</v-btn>
+                </v-col>
+                <v-col cols="12">
+                  <v-btn class="mr-2" color="secondary">Secondary</v-btn>
+                  <v-btn :disabled="true" color="success">Success</v-btn>
+                </v-col>
+                <v-col cols="12">
+                  <v-btn class="mr-2" color="warning">Warning</v-btn>
+                  <v-btn :disabled="true" color="error">Error</v-btn>
+                </v-col>
               </v-row>
             </v-container>
           </v-card-text>
@@ -54,4 +69,7 @@ const states = [
   'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah',
   'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
 ]
+
+const disabledStateValue = states[6]
+
 </script>
